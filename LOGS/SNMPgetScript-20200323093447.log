@@ -1,0 +1,73 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+STEP 10 This is just a simple banner to place in the log File!
+The Current Bash version 4.1.2(1)-release...
+                 Mon Mar 23 09:34:47 EDT 2020 
+                 Running Function #:  SNMPgetLoop_2       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SCRIPT_PATH =  /home/smarts/TjsMYSCRIPTS
+MYLOG       =  /home/smarts/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200323093447.log
+MYtmpLOG    =  /tmp/TempScript-20200323093447.log
+My_ARL_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/smarts/TjsMYSCRIPTS/INPUTS/TestCommStrgs
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = Qw1LtM0n
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 153.39.123.38
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+OUTPUT OF TEST--snmpget -v 2c -c Qw1LtM0n 153.39.123.38 sysName.0
+Timeout: No Response from 153.39.123.38.
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = SNMPneCNMP
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 153.39.123.38
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+OUTPUT OF TEST--snmpget -v 2c -c SNMPneCNMP 153.39.123.38 sysName.0
+SNMPv2-MIB::sysName.0 = STRING: R3-TL-ptx10K-lr2-re0.vzbi.com
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = 3clip535t4t5
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 153.39.123.38
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+OUTPUT OF TEST--snmpget -v 2c -c 3clip535t4t5 153.39.123.38 sysName.0
+Timeout: No Response from 153.39.123.38.

@@ -1,0 +1,278 @@
+#!/bin/bash
+#
+# This File contains all of the Function Modules for the automation of SMARTS functions.
+# Created 2/29/2020 Tjs.
+#
+#
+# CURDATE=`date +%Y%m%d%H%M%S`
+# SCRIPT_PATH=/home/speroth/SCRIPTS
+# MYINTERVAL=2
+# MYLOG=$SCRIPT_PATH/LOGS/4Loops.shell.script-"""$CURDATE""".log
+# DOMAINS=$SCRIPT_PATH/FUNCTIONS/ARL_Dom_Inputs
+# INPUTS=$SCRIPT_PATH/INPUTS/
+# DOMAINS=$SCRIPT_PATH/FUNCTIONS/RES_Dom_Inputs
+# DOMAINS=$SCRIPT_PATH/FUNCTIONS/Stage2_Dom_Inputs
+# @@@@@                                                                                                 . $SCRIPT_PATH/MODULES/SmartsFunctions
+# PATH=$PATH:/usr/sbin
+# MYCOUNT=0
+# MYINT_1=300
+# MYINT_2=5
+# MYCOUNT=0
+
+function Log_Out_Put_1() {
+#
+# Step 10 - This is just a simple banner to show what step we are in.
+#
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+ echo "STEP 10 This is just a simple banner to place in the log File!" >> ${MYLOG} 2>&1
+ echo "The Current Bash version ${BASH_VERSION}..." | tee -a ${MYLOG}
+ echo "                 `date` " >> ${MYLOG} 2>&1
+ echo "                 Running Function #:  """$RunningFunc"""       " >> ${MYLOG} 2>&1
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+
+echo "SCRIPT_PATH = " $SCRIPT_PATH | tee -a ${MYLOG}
+echo "MYLOG       = " $MYLOG | tee -a ${MYLOG}
+echo "MYtmpLOG    = " $MYtmpLOG | tee -a ${MYLOG}
+echo "My_ARL_DOMS = " $My_ARL_DOMS | tee -a ${MYLOG}
+echo "My_RES_DOMS = " $My_RES_DOMS | tee -a ${MYLOG}
+echo "My_Known_Comm_Strgs = " $My_Known_Comm_Strgs | tee -a ${MYLOG}
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+}
+
+
+function Log_Out_Put_2() {
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+ echo "                       `date` " | tee -a ${MYLOG}
+ echo "Bash version ${BASH_VERSION}..." | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "STAGE 1: STEP 10 This is just a simple banner to place in the log File!" | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "                 Running Function #:  """$RunningFunc"""       " | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "SCRIPT_PATH = " $SCRIPT_PATH | tee -a ${MYLOG}
+ echo "MYLOG   =     " $MYLOG | tee -a ${MYLOG}
+ echo "MYtmpLOG    = " $MYtmpLOG | tee -a ${MYLOG}
+ echo "My_ARL_DOMS = " $My_ARL_DOMS | tee -a ${MYLOG}
+ echo "My_RES_DOMS = " $My_RES_DOMS | tee -a ${MYLOG}
+ echo "My_Known_Comm_Strgs = " $My_Known_Comm_Strgs | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+
+#
+# Stage 1:  Step 10 - This step ....
+#
+}
+
+
+function MyIpVerification(){
+echo '===============================================' | tee -a "${MYLOG}"
+echo 'You have entered an IP address parameter' | tee -a "${MYLOG}"
+echo 'The current CIPAdd = '$CIPAdd | tee -a "${MYLOG}"
+echo '===============================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function CommunityBanner() {
+echo '=================================================' | tee -a "${MYLOG}"
+echo '=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === ' | tee -a "${MYLOG}"
+echo "Community String = $Input_1" | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function OIDCallBanner() {
+echo '=================================================' | tee -a "${MYLOG}"
+echo '=== BEGINNING TEST OF SYSNAME OID            === ' | tee -a "${MYLOG}"
+echo "Object ID = $MyOID_Call" | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function MyNote_1() {
+This set -xv command will give you more insight into the error.
+  set -xv
+ NOTE: Turned out to be a DOS input file was the problem.
+  Did a DOS2UNIX on the file and everything is fine now.
+This is what I was seeing in the output:
++ tee -a /home/tjs4abs/SCRIPTS/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200321125841.log
++ echo '1--snmpget -v 2c -c' $'3clip535t4t5\r'
+1--snmpget -v 2c -c 3clip535t4t5
++ tee -a /home/tjs4abs/SCRIPTS/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200321125841.log
++ echo '2--snmpget -v 2c -c' $'3clip535t4t5\r' 10.210.180.223
+ 10.210.180.223c -c 3clip535t4t5
++ tee -a /home/tjs4abs/SCRIPTS/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200321125841.log
++ echo '3--snmpget -v 2c -c' $'3clip535t4t5\r' 10.210.180.223 sysName.0
+ 10.210.180.223 sysName.0535t4t5
++ snmpget -v 2c -c $'3clip535t4t5\r' 10.210.180.223 sysName.0
++ cat /tmp/TempScript-20200321125841.log
+Add this to my Linux Links -- https://www.shellcheck.net/
+###################################################################################
+}
+
+function MySymLinker() {
+#  BELOW IS THE CODE THAT WAS USED TO POPULATE THIS DIRECTORY WITH THE LINKS:
+#  =========================================================================================================
+echo $DomainName
+ln -s /data/InCharge95/"""$DomainName"""/local/logs/"""$DomainName"""_en_US_UTF-8.log """$DomainName"""_en_US_UTF-8.log
+lsa /data/InCharge95/"""$DomainName"""/local/logs/"""$DomainName"""_en_US_UTF-8.log
+}
+
+
+function LOGICSNMPgetLoop_2() {
+Log_Out_Put_1
+for Input_1 in `awk -F: '{print $1}' "$Input_File_1"`
+do
+
+# CommunityBanner
+# MyIpVerification
+# OIDCallBanner
+
+# echo "1--snmpget -v 2c -c" "$Input_1" | tee -a "${MYLOG}"
+# echo "2--snmpget -v 2c -c" "${Input_1}" "${CIPAdd}" | tee -a "${MYLOG}"
+# echo "3--snmpget -v 2c -c" "$Input_1" ${CIPAdd} ${MyOID_Call} | tee -a "${MYLOG}"
+
+snmpget -v 2c -c "${Input_1}" ${CIPAdd} ${MyOID_Call}  >> "${MYtmpLOG}" 2>&1
+cat "${MYtmpLOG}" | tee -a "$MYLOG"
+If 
+
+
+rm "${MYtmpLOG}"
+done
+
+}
+
+
+
+function SNMPgetLoop_2() {
+Log_Out_Put_1
+for Input_1 in `awk -F: '{print $1}' "$Input_File_1"`
+do
+
+ CommunityBanner
+ MyIpVerification
+ OIDCallBanner
+
+# echo "1--snmpget -v 2c -c" "$Input_1" | tee -a "${MYLOG}"
+# echo "2--snmpget -v 2c -c" "${Input_1}" "${CIPAdd}" | tee -a "${MYLOG}"
+# echo "3--snmpget -v 2c -c" "$Input_1" ${CIPAdd} ${MyOID_Call} | tee -a "${MYLOG}"
+echo "OUTPUT OF TEST--snmpget -v 2c -c" "$Input_1" ${CIPAdd} ${MyOID_Call} >> "${MYtmpLOG}"
+snmpget -v 2c -c "${Input_1}" ${CIPAdd} ${MyOID_Call}  >> "${MYtmpLOG}" 2>&1
+cat "${MYtmpLOG}" | tee -a "$MYLOG"
+rm "${MYtmpLOG}"
+done
+
+}
+
+
+function TwoDayLoop_1() {
+Log_Out_Put_1
+for Input_1 in `awk -F: '{print $1}' "$Input_File_1"`
+do
+# set -xv
+# echo "1--sml -d " "$Input_1" | tee -a "${MYLOG}"
+ echo "SAMPLE OUTPUT STRING--sml -d " "${Input_1}" "-v" | tee -a "${MYLOG}"
+sm_perl /opt/sbin/smarts_lookup.pl -d "${Input_1}" "-v" | tee -a "${MYLOG}"
+
+done
+
+}
+
+
+function MySnmpGetChkr() {
+#
+# This is the function to test Known Commnity strings against a device.
+#
+echo "" | tee -a ${MYLOG}
+date >> ${MYLOG}
+echo "TESTING snmpget -v 2c -c """$CSNMPkey""" " | tee -a ${MYLOG}
+echo '=================================================' | tee -a ${MYLOG}
+snmpget -v 2c -c """$CSNMPkey""" """$CIPAdd""" sysName.0 >> ${MYLOG} 2>&1
+}
+
+
+function My_While_Options() {
+while getopts 'lha:' OPTION; do
+  case "$OPTION" in
+    l)
+      echo "linuxconfig"
+      ;;
+
+    h)
+      echo "h stands for h"
+      ;;
+
+    a)
+      avalue="$OPTARG"
+      echo "The value provided is $OPTARG"
+      ;;
+    ?)
+      echo "script usage: $(basename $0) [-l] [-h] [-a somevalue]" >&2
+      exit 1
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
+}
+
+
+function MyLoop_1() {
+i=1
+#     for username in `awk -F: '{print $1}' /etc/passwd`
+for Input_1 in `awk -F: '{print $1}' $Input_File_1`
+do
+#     echo "Username $((i++)) : $username"
+#       echo "Domain Name =  $((i++)) : $Input_1" | tee -a ${MYLOG}
+echo "Domain Name = $Input_1" | tee -a ${MYLOG}
+done
+}
+
+
+
+function MyLoop_3() {
+i=1
+#     for username in `awk -F: '{print $1}' /etc/passwd`
+for Input_1 in `awk -F: '{print $1}' $Input_File_1`
+do
+echo "Device Name = $Input_1" | tee -a ${MYLOG}
+snmpget -v 2c -c $Input_1 $CIPAdd sysName.0 >> $MYLOG 2>&1
+done
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

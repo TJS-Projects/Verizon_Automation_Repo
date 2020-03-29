@@ -1,0 +1,33 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+STEP 10 This is just a simple banner to place in the log File!
+The Current Bash version 4.1.2(1)-release...
+                 Sun Mar 22 23:31:25 EDT 2020 
+                 Running Function #:  TwoDayListing       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SCRIPT_PATH =  /home/smarts/TjsMYSCRIPTS
+MYLOG       =  /home/smarts/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200322233125.log
+MYtmpLOG    =  /tmp/TempScript-20200322233125.log
+My_ARL_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/smarts/TjsMYSCRIPTS/INPUTS/TestCommStrgs
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SAMPLE OUTPUT STRING--sml -d  MC13.LND9 -v
+SAMPLE OUTPUT STRING--sml -d  MC1.PAR4 -v
+SAMPLE OUTPUT STRING--sml -d  MC1.PAR7 -v
+SAMPLE OUTPUT STRING--sml -d  MC2.PAR4 -v
+SAMPLE OUTPUT STRING--sml -d  MC3.PAR4 -v
+SAMPLE OUTPUT STRING--sml -d  ME1.PAR4 -v
+SAMPLE OUTPUT STRING--sml -d  MX1.PAR4 -v
+SAMPLE OUTPUT STRING--sml -d  MC1.MRS1 -v
+SAMPLE OUTPUT STRING--sml -d  MC11.FFT3 -v
+SAMPLE OUTPUT STRING--sml -d  MC2.MRS1 -v
+SAMPLE OUTPUT STRING--sml -d  ME4.FFT3 -v
+SAMPLE OUTPUT STRING--sml -d  MX1.MRS1 -v
+SAMPLE OUTPUT STRING--sml -d  MX2.MRS1 -v
+SAMPLE OUTPUT STRING--sml -d  VR1.TOR2 -v
+SAMPLE OUTPUT STRING--sml -d  MT2.SJU2 -v
+SAMPLE OUTPUT STRING--sml -d  CIMC-SR1.RES -v
+SAMPLE OUTPUT STRING--sml -d  VP1.BUF4 -v
+SAMPLE OUTPUT STRING--sml -d  MC1.JAX1 -v
+SAMPLE OUTPUT STRING--sml -d  MC2.JAX1 -v
+SAMPLE OUTPUT STRING--sml -d  BH1.LAX11 -v

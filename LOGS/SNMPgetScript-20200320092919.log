@@ -1,0 +1,32 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                       Fri Mar 20 09:29:19 EDT 2020 
+Bash version 4.1.2(1)-release...
+
+STAGE 1: STEP 10 This is just a simple banner to place in the log File!
+
+                 Running Function #:  SNMPgetLoop_2       
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+SCRIPT_PATH =  /home/smarts/TjsMYSCRIPTS
+MYLOG   =      /home/smarts/TjsMYSCRIPTS/LOGS/SNMPgetScript-20200320092919.log
+MYtmpLOG    =  /tmp/TempScript-20200320092919.log
+My_ARL_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/smarts/TjsMYSCRIPTS/INPUTS/TestCommStrgs
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 10.210.180.223
+ TESTING snmpget -v 2c -c Qw1LtM0n  10.210.180.223 
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+=================================================
+
+
+Community String = Qw1LtM0n
+ TESTING snmpget -v 2c -c Qw1LtM0n  10.210.180.223 

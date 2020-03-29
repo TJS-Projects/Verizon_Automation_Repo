@@ -1,0 +1,63 @@
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = Qw1LtM0n
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 10.210.180.223
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+1--snmpget -v 2c -c Qw1LtM0n
+2--snmpget -v 2c -c Qw1LtM0n 10.210.180.223
+3--snmpget -v 2c -c Qw1LtM0n 10.210.180.223 sysName.0
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = SNMPneCNMP
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 10.210.180.223
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+1--snmpget -v 2c -c SNMPneCNMP
+2--snmpget -v 2c -c SNMPneCNMP 10.210.180.223
+3--snmpget -v 2c -c SNMPneCNMP 10.210.180.223 sysName.0
+=================================================
+=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === 
+Community String = 3clip535t4t5
+=================================================
+
+
+===============================================
+You have entered an IP address parameter
+The current CIPAdd = 10.210.180.223
+===============================================
+
+
+=================================================
+=== BEGINNING TEST OF SYSNAME OID            === 
+Object ID = sysName.0
+=================================================
+
+
+1--snmpget -v 2c -c 3clip535t4t5
+2--snmpget -v 2c -c 3clip535t4t5 10.210.180.223
+3--snmpget -v 2c -c 3clip535t4t5 10.210.180.223 sysName.0

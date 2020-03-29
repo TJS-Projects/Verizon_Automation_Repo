@@ -1,0 +1,40 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                       Wed Mar 11 21:02:07 EDT 2020 
+Bash version 4.1.2(1)-release...
+
+STAGE 1: STEP 10 This is just a simple banner to place in the log File!
+
+                 Running Function #:  SNMPgetLoop_1       
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Domain Name =  1 : 1vBfKVyOPGlpcuhcX8je2T
+Domain Name =  1 : 22ZXX3JA2jKtyVV6yWSLmh
+Domain Name =  1 : 25zw9XGpnjfKKhWmVPOoM2
+Domain Name =  1 : 2ASL9zKhkSgJJwie53VEhk
+Domain Name =  1 : 39eO8rlYqKIiZwvKxYPoOd
+Domain Name =  1 : 3clip535t4t5
+Domain Name =  1 : 4JQC7Dse7BJ20tBOBl276T
+Domain Name =  1 : 5GiLmDNKrWWhh2t2wpWx3l
+Domain Name =  1 : 5cs666uxfRlGRvxg8Lbr3A
+Domain Name =  1 : 69CeUFZvbOvfjJ4DneodMl
+Domain Name =  1 : 6fEh9RTjHtaJClSR0usuCT
+Domain Name =  1 : 6pgBhsbvsYDBIiOgrGcJk5
+Domain Name =  1 : 9M1ZYsbL
+Domain Name =  1 : 9kv3CX74
+Domain Name =  1 : Gr1usSr0
+Domain Name =  1 : Gr1usSr0@advantage
+Domain Name =  1 : Gr1usSr0@business
+Domain Name =  1 : NATIONAL/default@Gr1usSr0
+Domain Name =  1 : R9pv32vk
+Domain Name =  1 : cam1t!
+Domain Name =  1 : jYr2tXf1
+Domain Name =  1 : vzhealth
+Domain Name =  1 : walrus
+Domain Name =  1 : walrus@VOL
+Domain Name =  1 : walrus@analyzer
+Domain Name =  1 : walrus@atm-cross-connect
+Domain Name =  1 : walrus@default
+Domain Name =  1 : walrus@test-dhcp
+Domain Name =  1 : walrus@vol
+Domain Name =  1 : walrus@vol`
+Domain Name =  1 : walrus@walled-garden

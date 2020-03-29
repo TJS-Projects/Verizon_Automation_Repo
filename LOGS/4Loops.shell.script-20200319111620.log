@@ -1,0 +1,5 @@
+SCRIPT_PATH =  /home/speroth/SCRIPTS
+MYLOG   =      /home/speroth/SCRIPTS/LOGS/4Loops.shell.script-20200319111620.log
+My_ARL_DOMS =  /home/speroth/SCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/speroth/SCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/speroth/SCRIPTS/INPUTS/CurrentCommunityStrings

@@ -1,0 +1,56 @@
+SCRIPT_PATH =  /home/speroth/SCRIPTS
+MYLOG   =      /home/speroth/SCRIPTS/LOGS/4Loops.shell.script-20200319111810.log
+My_ARL_DOMS =  /home/speroth/SCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/speroth/SCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/speroth/SCRIPTS/INPUTS/CurrentCommunityStrings
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                       Thu Mar 19 11:18:10 EDT 2020 
+Bash version 4.1.2(1)-release...
+
+STAGE 1: STEP 10 This is just a simple banner to place in the log File!
+
+                 Running Function #:  SNMPgetLoop_1       
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
+Domain Name =  1 : 
