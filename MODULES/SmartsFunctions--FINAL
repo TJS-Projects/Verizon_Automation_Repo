@@ -434,32 +434,31 @@ AutoMateEOP_Banner
 
 
 function ARL_LD_GT_2Day_FULL-Mail() {
-mail -s "$SHRTDATE" '-ARL LD_GT 2 Day FULL Listing' -a $MYLOG nmssmarts@one.verizon.com << EOF
+mail -s "ARL LD_GT 2 Day FULL Listing_${SHRTDATE}" -a $MYLOG nmssmarts@one.verizon.com << EOF
 Attached please find todays ARL Last Discovery GT 2 Day FULL LISTING.
 EOF
 }
 
 function ARL_LD_GT_2Day_Suspects-Mail() {
-mail -s "$SHRTDATE" '-ARL LD_GT 2 Day Suspects' -a $MyTmpOUTPUT_3 nmssmarts@one.verizon.com << EOF
+mail -s "ARL LD_GT 2 Day Suspects_${SHRTDATE}" -a $MyTmpOUTPUT_3 nmssmarts@one.verizon.com << EOF
 Attached please find todays ARL Last Discovery GT 2 Day SUSPECTS report.
 EOF
 }
 
 function RES_LD_GT_2Day_FULL-Mail() {
-mail -s "$SHRTDATE" '-RES LD_GT 2 Day FULL Listing' -a $MYLOG nmssmarts@one.verizon.com << EOF
+mail -s "RES LD_GT 2 Day FULL Listing_${SHRTDATE}" -a $MYLOG nmssmarts@one.verizon.com << EOF
 Attached please find todays RES Last Discovery GT 2 Day FULL LISTING.
 EOF
 }
 
 function RES_LD_GT_2Day_Suspects-Mail() {
-mail -s "$SHRTDATE" '-RES LD_GT 2 Day Suspects' -a $MyTmpOUTPUT_3 nmssmarts@one.verizon.com << EOF
+mail -s "RES LD_GT 2 Day Suspects_${SHRTDATE}" -a $MyTmpOUTPUT_3 nmssmarts@one.verizon.com << EOF
 Attached please find todays RES Last Discovery GT 2 Day SUSPECTS report.
 EOF
-
+}
 
 function MAIL_ERROR_FUNC-Mail() {
-mail -s "$SHRTDATE" '-ERROR OCCRED WITH MAIL FUNCTION' -a $MyTmpOUTPUT_3 Thaddeus.Spero@Verizon.com << EOF
+mail -s "ERROR OCCRED WITH MAIL FUNCTION_ ${SHRTDATE} " -a $MyTmpOUTPUT_3 nmssmarts@one.verizon.com << EOF
 Attached please find todays RES Last Discovery GT 2 Day SUSPECTS report.
 EOF
-
 }

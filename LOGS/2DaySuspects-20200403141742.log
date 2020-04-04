@@ -1,0 +1,254 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  LISTING OF DEVICES THAT HAVE NO ALARMS @@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECTS      @@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  CIMC-SR1.RES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML FILE ...................... : /data/VI/DQ/CIMC-SR1.RES.xml                           (not found)
+   Device ........................ : CIMC-SR1.RES
+   Configured to be in ........... : AMPM-VZB-VAL-VRR-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USMA-2                                    (incorrect)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 146.170.6.132
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 18-MAR-20
+   DISCOVEREDLASTAT .............. : 18-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_UNMANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : UCS C240
+   NUMBEROFINTERFACES ............ : 0
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.1683
+   DISCOVERYERRORINFO ............ : Qualified access address not found
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 0                                                             (ok)
+   ELL Record .................... : NOT FOUND                                                (warning)
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : CIMC-SR1.RES
+   IP ............................ : 146.170.6.132
+   CLLI .......................... : ''
+   STATUS ........................ : NOT AVAILABLE
+   TREATMENT ..................... : ''
+   NOTES ......................... : removed on Thu Nov  7 14:30:57 2019 by Marshall, Tamie. 
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USMA-2  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 146.170.6.132                                        (not_managed)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : UCS C240
+   Location ...................... : RES
+   IsManaged ..................... : FALSE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 0
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.1683
+   DiscoveredFirstAt ............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveredLastAt .............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveryTime ................. : 0 00:00:16
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : ''
+   DiscoveryError ................ : Qualified access address not found                         (error)
+
+   Last mum records (max 10) ..... : 02-APR-20 15:02  id: 24907086  code: 106  size:        1,182 bytes
+                                   : 02-APR-20 18:36  id: 24909761  code: 106  size:        1,182 bytes
+                                   : 02-APR-20 19:01  id: 24910077  code: 106  size:        1,180 bytes
+                                   : 02-APR-20 22:34  id: 24912866  code: 106  size:        1,181 bytes
+                                   : 02-APR-20 22:55  id: 24913230  code: 106  size:        1,182 bytes
+                                   : 03-APR-20 03:10  id: 24916586  code: 106  size:        1,181 bytes
+                                   : 03-APR-20 07:04  id: 24919736  code: 106  size:        1,180 bytes
+                                   : 03-APR-20 11:14  id: 24924393  code: 106  size:        1,181 bytes
+                                   : 03-APR-20 11:35  id: 24924747  code: 106  size:        1,181 bytes
+                                   : 03-APR-20 13:36  id: 24926774  code: 106  size:        1,182 bytes
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USMA-2                                      (primary)
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  CIMC-SR1.RES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  ATC-CORE-RTR1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Thu Apr  2 07:31:52 2020
+   LocationCode .................. : PLEANJ
+   Name .......................... : ATC-CORE-RTR1
+   Status ........................ : IN_SERVICE
+   Type .......................... : ROUTER
+   Vendor ........................ : JUNIPER
+   Model ......................... : JUNIPER M40E
+   ManagementIPAddr .............. : 192.168.67.53
+   TID ........................... : PSVLNJPL1CR
+   DomainFlag .................... : VZT
+   Device ........................ : ATC-CORE-RTR1
+   Configured to be in ........... : AMPM-VZT-VAL-NJ-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   WARNING: Device is not found in database
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ATC-CORE-RTR1
+   IP ............................ : 192.168.67.53
+   LOCATION ...................... : PLEANJ
+   TID ........................... : PSVLNJPL1CR
+   STATUS ........................ : IN_SERVICE
+   MODTIME ....................... : 02-APR-2020 07:16
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ATC-CORE-RTR1
+   IP ............................ : 10.15.67.53
+   CLLI .......................... : ''
+   STATUS ........................ : NOT AVAILABLE
+   TREATMENT ..................... : ''
+   NOTES ......................... : removed on Fri Apr  3 11:52:18 2020 by Marshall, Tamie. 
+
+ SMARTS DOMAIN :: AMPM-VZT-VAL-NJ-1  ==================================================================
+
+   Server name ................... : arlmnrvzt (162.47.144.2)
+   WARNING: Device is not in SMARTS domain.
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : RES-SAM8-AGG-VZB
+                                   : VAL-SAM8-AGG-VZT
+                                   : AMPM-VZT-VAL-NJ-1
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  ATC-CORE-RTR1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  ATC-CORE-RTR2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Thu Apr  2 07:31:53 2020
+   LocationCode .................. : PLEANJ
+   Name .......................... : ATC-CORE-RTR2
+   Status ........................ : IN_SERVICE
+   Type .......................... : ROUTER
+   Vendor ........................ : JUNIPER
+   Model ......................... : JUNIPER M40E
+   ManagementIPAddr .............. : 192.168.67.54
+   TID ........................... : PSVLNJPL2CR
+   DomainFlag .................... : VZT
+   Device ........................ : ATC-CORE-RTR2
+   Configured to be in ........... : AMPM-VZT-VAL-NJ-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   WARNING: Device is not found in database
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ATC-CORE-RTR2
+   IP ............................ : 192.168.67.54
+   LOCATION ...................... : PLEANJ
+   TID ........................... : PSVLNJPL2CR
+   STATUS ........................ : IN_SERVICE
+   MODTIME ....................... : 02-APR-2020 07:16
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ATC-CORE-RTR2
+   IP ............................ : 10.15.67.54
+   CLLI .......................... : ''
+   STATUS ........................ : NOT AVAILABLE
+   TREATMENT ..................... : ''
+   NOTES ......................... : removed on Fri Apr  3 11:52:07 2020 by Marshall, Tamie. 
+
+ SMARTS DOMAIN :: AMPM-VZT-VAL-NJ-1  ==================================================================
+
+   Server name ................... : arlmnrvzt (162.47.144.2)
+   WARNING: Device is not in SMARTS domain.
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZT
+                                   : AMPM-VZT-VAL-NJ-1
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  ATC-CORE-RTR2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@     END OF AUTOMATION     @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

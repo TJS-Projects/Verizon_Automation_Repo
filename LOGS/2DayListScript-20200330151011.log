@@ -1,0 +1,112 @@
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = BH1.LAX11 
+=================================================
+EXECUTING: sml -d  BH1.LAX11 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Dec 10 10:31:31 2018
+   LocationCode .................. : LAX11
+   Name .......................... : BH1.LAX11
+   Status ........................ : AVAILABLE
+   Type .......................... : VIRTUAL ROUTER
+   Vendor ........................ : Juniper
+   Model ......................... : vRR
+   ManagementIPAddr .............. : 137.39.4.75
+   DomainFlag .................... : VZB
+   Region ........................ : South West USA
+   Device ........................ : BH1.LAX11
+   Configured to be in ........... : AMPM-VZB-VAL-USSW-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USSW-1                                      (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 137.39.4.75
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 04-MAR-20
+   DISCOVEREDLASTAT .............. : 04-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : JUNIPER
+   MODEL ......................... : VRR Internet Router
+   NUMBEROFINTERFACES ............ : 12
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.2636.1.1.1.2.110
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : BH1.LAX11
+   IP ............................ : 137.39.4.75
+   LOCATION ...................... : LAX11
+   TID ........................... : BH1.LAX11
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 10-DEC-2018 10:04
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USSW-1  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 137.39.4.75                                                   (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : JUNIPER
+   Model ......................... : VRR Internet Router
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 12
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.2636.1.1.1.2.110
+   DiscoveredFirstAt ............. : March 4, 2020 3:19:46 AM CST
+   DiscoveredLastAt .............. : March 4, 2020 3:19:46 AM CST
+   DiscoveryTime ................. : 0 00:00:41
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Backbone Router
+   VZ_LocationCode ............... : LAX
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : AMERICA-USSW
+   VZ_TID ........................ : BH1.LAX11
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USSW-1                                      (primary)
+
+   Hosts services ................ : BGPService::BGP-SVC-BH1.LAX11
+                                   : MPLSService::MPLS-BH1.LAX11
+                                   : ISISService::ISIS-SVC-BH1.LAX11
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_BH1.LAX11_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_BH1.LAX11_Down
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@     END OF AUTOMATION     @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+

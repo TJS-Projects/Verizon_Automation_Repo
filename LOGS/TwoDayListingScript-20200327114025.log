@@ -1,0 +1,1930 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@  STEP 10 This is automation for the last discovered GT 2 Day List!  @@@
+The Current Bash version 4.1.2(1)-release...
+                 Fri Mar 27 11:40:25 CDT 2020 
+                 Fri Mar 27 11:40:25 CDT 2020 
+                 Running Function #:  TwoDayListing       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SCRIPT_PATH =  /home/smarts/TjsMYSCRIPTS
+MYLOG       =  /home/smarts/TjsMYSCRIPTS/LOGS/TwoDayListingScript-20200327114025.log
+MYtmpLOG    =  /tmp/TempScript-20200327114025.log
+My_ARL_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/ARL_DOM_INPUT
+My_RES_DOMS =  /home/smarts/TjsMYSCRIPTS/INPUTS/RES_DOM_INPUT
+My_Known_Comm_Strgs =  /home/smarts/TjsMYSCRIPTS/INPUTS/TestCommStrgs
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+@@@ THE FOLLOWING DEVICES WERE FOUND IN THE  @@@@
+@@@          CURRENT 2 DAY LISTING:          @@@@
+=================================================
+MC13.LND9
+MC1.PAR4
+MC1.PAR7
+MC2.PAR4
+MC3.PAR4
+ME1.PAR4
+MX1.PAR4
+MC1.MRS1
+MC11.FFT3
+MC2.MRS1
+ME4.FFT3
+MX1.MRS1
+MX2.MRS1
+VR1.TOR2
+MT2.SJU2
+CIMC-SR1.RES
+VP1.BUF4
+BH1.LAX11
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC13.LND9 
+=================================================
+EXECUTING: sml -d  MC13.LND9 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:36:22 2019
+   LocationCode .................. : LND9
+   Name .......................... : MC13.LND9
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 204.177.23.10
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC13.LND9
+   Configured to be in ........... : AMPM-VZB-DTM-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-1                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 204.177.23.10
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 27-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC13.LND9
+   IP ............................ : 204.177.23.10
+   LOCATION ...................... : LND9
+   TID ........................... : MC13.LND9
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-JUN-2019 00:18
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-1  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 204.177.23.10                                                 (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:19:57 PM GMT+00:00
+   DiscoveredLastAt .............. : February 27, 2020 3:46:55 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:19
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC13.LND9
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC13.LND9_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC1.PAR4 
+=================================================
+EXECUTING: sml -d  MC1.PAR4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:07 2019
+   LocationCode .................. : PAR4
+   Name .......................... : MC1.PAR4
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 2610
+   ManagementIPAddr .............. : 195.129.160.98
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC1.PAR4
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.98
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC1.PAR4
+   IP ............................ : 195.129.160.98
+   LOCATION ...................... : PAR4
+   TID ........................... : MC1.PAR4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:55
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.98                                                (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:20 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:46 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:25
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC1.PAR4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC1.PAR4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC1.PAR7 
+=================================================
+EXECUTING: sml -d  MC1.PAR7 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:36:01 2019
+   LocationCode .................. : PAR7
+   Name .......................... : MC1.PAR7
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 195.129.160.96
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC1.PAR7
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.96
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC1.PAR7
+   IP ............................ : 195.129.160.96
+   LOCATION ...................... : PAR7
+   TID ........................... : MC1.PAR7
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-JUN-2019 00:18
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.96                                                (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:21 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:46 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:27
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC1.PAR7
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC1.PAR7_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC2.PAR4 
+=================================================
+EXECUTING: sml -d  MC2.PAR4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:07 2019
+   LocationCode .................. : PAR4
+   Name .......................... : MC2.PAR4
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 2610
+   ManagementIPAddr .............. : 195.129.160.198
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC2.PAR4
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.198
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC2.PAR4
+   IP ............................ : 195.129.160.198
+   LOCATION ...................... : PAR4
+   TID ........................... : MC2.PAR4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:55
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.198                                               (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:19 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:46 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:22
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC2.PAR4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC2.PAR4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC3.PAR4 
+=================================================
+EXECUTING: sml -d  MC3.PAR4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:08 2019
+   LocationCode .................. : PAR4
+   Name .......................... : MC3.PAR4
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 2610
+   ManagementIPAddr .............. : 195.129.160.102
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC3.PAR4
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.102
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC3.PAR4
+   IP ............................ : 195.129.160.102
+   LOCATION ...................... : PAR4
+   TID ........................... : MC3.PAR4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:44
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.102                                               (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:19 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:50 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:16
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC3.PAR4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC3.PAR4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = ME1.PAR4 
+=================================================
+EXECUTING: sml -d  ME1.PAR4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:07 2019
+   LocationCode .................. : PAR4
+   Name .......................... : ME1.PAR4
+   Status ........................ : AVAILABLE
+   Type .......................... : CATALYST
+   Vendor ........................ : Cisco
+   Model ......................... : 2900 XL-WS-C2924-XL
+   ManagementIPAddr .............. : 195.129.174.61
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : ME1.PAR4
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.174.61
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ME1.PAR4
+   IP ............................ : 195.129.174.61
+   LOCATION ...................... : PAR4
+   TID ........................... : ME1.PAR4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-JUN-2019 00:17
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.174.61                                                (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:21 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:59 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:14
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : ME1.PAR4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_ME1.PAR4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MX1.PAR4 
+=================================================
+EXECUTING: sml -d  MX1.PAR4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Sun Jun 23 23:37:43 2019
+   LocationCode .................. : PAR4
+   Name .......................... : MX1.PAR4
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 195.129.160.245
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MX1.PAR4
+   Configured to be in ........... : AMPM-VZB-DTM-4
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-4                                           (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 195.129.160.245
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : C3640
+   NUMBEROFINTERFACES ............ : 13
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.110
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MX1.PAR4
+   IP ............................ : 195.129.160.245
+   LOCATION ...................... : PAR4
+   TID ........................... : MX1.PAR4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:18
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-4  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.245                                               (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : C3640
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 13
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.110
+   DiscoveredFirstAt ............. : October 15, 2019 3:29:00 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:49:28 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:01:22
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Management Device
+   VZ_LocationCode ............... : PAR
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : EMEA
+   VZ_TID ........................ : MX1.PAR4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-DTM-4                                           (primary)
+                                   : RES-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-AMS-4
+                                   : RES-SAM8-AGG-VZB
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_MX1.PAR4_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_MX1.PAR4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC1.MRS1 
+=================================================
+EXECUTING: sml -d  MC1.MRS1 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:32 2019
+   LocationCode .................. : MRS1
+   Name .......................... : MC1.MRS1
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 2610
+   ManagementIPAddr .............. : 195.129.160.66
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC1.MRS1
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.66
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC1.MRS1
+   IP ............................ : 195.129.160.66
+   LOCATION ...................... : MRS1
+   TID ........................... : MC1.MRS1
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:55
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.66                                                (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:32 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:45 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:11
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC1.MRS1
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC1.MRS1_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC11.FFT3 
+=================================================
+EXECUTING: sml -d  MC11.FFT3 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:36:58 2019
+   LocationCode .................. : FFT3
+   Name .......................... : MC11.FFT3
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 195.129.192.153
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC11.FFT3
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.192.153
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 03-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC11.FFT3
+   IP ............................ : 195.129.192.153
+   LOCATION ...................... : FFT3
+   TID ........................... : MC11.FFT3
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:55
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.192.153                                               (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:29 PM GMT+00:00
+   DiscoveredLastAt .............. : March 3, 2020 3:45:07 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:10
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC11.FFT3
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC11.FFT3_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC2.MRS1 
+=================================================
+EXECUTING: sml -d  MC2.MRS1 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:34:33 2019
+   LocationCode .................. : MRS1
+   Name .......................... : MC2.MRS1
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 2610
+   ManagementIPAddr .............. : 195.129.160.166
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MC2.MRS1
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.160.166
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MC2.MRS1
+   IP ............................ : 195.129.160.166
+   LOCATION ...................... : MRS1
+   TID ........................... : MC2.MRS1
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:55
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.166                                               (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:32 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:43:45 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:10
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : MC2.MRS1
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_MC2.MRS1_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = ME4.FFT3 
+=================================================
+EXECUTING: sml -d  ME4.FFT3 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:36:59 2019
+   LocationCode .................. : FFT3
+   Name .......................... : ME4.FFT3
+   Status ........................ : AVAILABLE
+   Type .......................... : CATALYST
+   Vendor ........................ : Cisco
+   Model ......................... : 2900 XL-WS-C2924-XL
+   ManagementIPAddr .............. : 195.129.201.58
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : ME4.FFT3
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 195.129.201.58
+   ACCESSMODE .................... : ICMPONLY
+   CERTIFICATION ................. : UNDISCOVERED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 03-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : ''
+   MODEL ......................... : ''
+   NUMBEROFINTERFACES ............ : 1
+   READCOMMUNITY ................. : ''
+   SYSTEMOBJECTID ................ : ''
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : ME4.FFT3
+   IP ............................ : 195.129.201.58
+   LOCATION ...................... : FFT3
+   TID ........................... : ME4.FFT3
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-JUN-2019 00:17
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.201.58                                                (ok)
+   Certification ................. : UNDISCOVERED                                             (warning)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPONLY
+   ReadCommunity ................. : ''
+   Vendor ........................ : ''
+   Model ......................... : ''
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 1
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : ''
+   DiscoveredFirstAt ............. : October 15, 2019 3:20:33 PM GMT+00:00
+   DiscoveredLastAt .............. : March 3, 2020 3:45:02 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:00:19
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : ME4.FFT3
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : RES-SAM8-AGG-VZB-INTL
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Host_ME4.FFT3_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MX1.MRS1 
+=================================================
+EXECUTING: sml -d  MX1.MRS1 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Sun Jun 23 23:38:09 2019
+   LocationCode .................. : MRS1
+   Name .......................... : MX1.MRS1
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 195.129.160.242
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MX1.MRS1
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 195.129.160.242
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : C3640
+   NUMBEROFINTERFACES ............ : 6
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.110
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Acts as proxy ................. : in AMPM-VZB-DTM-3 for MX2.LYN1                                (ok)
+   Has proxy ..................... : MX2.LYN1 in AMPM-VZB-DTM-5                                    (ok)
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MX1.MRS1
+   IP ............................ : 195.129.160.242
+   LOCATION ...................... : MRS1
+   TID ........................... : MX1.MRS1
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:18
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.242                                               (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : C3640
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 6
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.110
+   DiscoveredFirstAt ............. : October 15, 2019 3:32:51 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:46:53 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:01:17
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Management Device
+   VZ_LocationCode ............... : MRS
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : EMEA
+   VZ_TID ........................ : MX1.MRS1
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-DTM-3                                             (proxy)
+                                   : AMPM-VZB-DTM-5                                           (primary)
+                                   : RES-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-AMS-3
+                                   : AMPM-VZB-AMS-5
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_MX1.MRS1_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_MX1.MRS1_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MX2.MRS1 
+=================================================
+EXECUTING: sml -d  MX2.MRS1 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Sun Jun 23 23:38:09 2019
+   LocationCode .................. : MRS1
+   Name .......................... : MX2.MRS1
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 3640
+   ManagementIPAddr .............. : 195.129.160.241
+   DomainFlag .................... : VZB
+   Region ........................ : Europe
+   Device ........................ : MX2.MRS1
+   Configured to be in ........... : AMPM-VZB-DTM-5
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-DTM-5                                           (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 195.129.160.241
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 15-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : C3640
+   NUMBEROFINTERFACES ............ : 6
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.110
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Acts as proxy ................. : in AMPM-VZB-DTM-4 for MX2.PAR4                                (ok)
+   Has proxy ..................... : MX2.PAR4 in AMPM-VZB-DTM-5                                    (ok)
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MX2.MRS1
+   IP ............................ : 195.129.160.241
+   LOCATION ...................... : MRS1
+   TID ........................... : MX2.MRS1
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 23:18
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-DTM-5  =====================================================================
+
+   Server name ................... : dtm1eusosrv133.dtm.ops.eu.uu.net (213.68.123.56)
+   IP Address .................... : 195.129.160.241                                               (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : C3640
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 6
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.110
+   DiscoveredFirstAt ............. : October 15, 2019 3:33:16 PM GMT+00:00
+   DiscoveredLastAt .............. : February 24, 2020 3:46:16 PM GMT+00:00
+   DiscoveryTime ................. : 0 00:01:17
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Management Device
+   VZ_LocationCode ............... : MRS
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : EMEA
+   VZ_TID ........................ : MX2.MRS1
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-DTM-5                                           (primary)
+                                   : AMPM-VZB-DTM-4                                             (proxy)
+                                   : RES-SAM8-AGG-VZB-INTL
+                                   : AMPM-VZB-AMS-4
+                                   : AMPM-VZB-AMS-5
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_MX2.MRS1_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_MX2.MRS1_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = VR1.TOR2 
+=================================================
+EXECUTING: sml -d  VR1.TOR2 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Sun Jun 23 22:35:31 2019
+   LocationCode .................. : TOR2
+   Name .......................... : VR1.TOR2
+   Status ........................ : AVAILABLE
+   Type .......................... : VIRTUAL ROUTER
+   Vendor ........................ : Redback
+   Model ......................... : SMS 1800
+   ManagementIPAddr .............. : 153.38.159.232
+   DomainFlag .................... : VZB
+   Region ........................ : Canada East
+   Device ........................ : VR1.TOR2
+   Configured to be in ........... : AMPM-VZB-VAL-CANE-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-CANE-1                                      (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 153.38.159.232
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 16-OCT-19
+   DISCOVEREDLASTAT .............. : 08-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : REDBACK
+   MODEL ......................... : Networks AOS / SE 800
+   NUMBEROFINTERFACES ............ : 42
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.2352.1.3
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : VR1.TOR2
+   IP ............................ : 153.38.159.232
+   LOCATION ...................... : TOR2
+   TID ........................... : VR1.TOR2
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 23-JUN-2019 22:03
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-CANE-1  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 153.38.159.232                                                (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : REDBACK
+   Model ......................... : Networks AOS / SE 800
+   Location ...................... : TOR2
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 42
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.2352.1.3
+   DiscoveredFirstAt ............. : October 16, 2019 11:25:49 AM CDT
+   DiscoveredLastAt .............. : March 8, 2020 8:30:22 AM CDT
+   DiscoveryTime ................. : 0 00:01:04
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : DSL Router - Business
+   VZ_LocationCode ............... : TOR
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : AMERICA-CANE
+   VZ_TID ........................ : VR1.TOR2
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-CANE-1                                      (primary)
+                                   : RES-SAM8-AGG-VZB
+                                   : AMPM-VZB-RES-CANE-1
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_VR1.TOR2_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_VR1.TOR2_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MT2.SJU2 
+=================================================
+EXECUTING: sml -d  MT2.SJU2 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Jun 24 00:37:08 2019
+   LocationCode .................. : SJU2
+   Name .......................... : MT2.SJU2
+   Status ........................ : AVAILABLE
+   Type .......................... : ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 7204
+   ManagementIPAddr .............. : 206.112.240.4
+   DomainFlag .................... : VZB
+   Region ........................ : North Latin America
+   Device ........................ : MT2.SJU2
+   Configured to be in ........... : AMPM-VZB-VAL-LAMX-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-LAMX-1                                      (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 206.112.240.4
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 16-OCT-19
+   DISCOVEREDLASTAT .............. : 24-FEB-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : 7204
+   NUMBEROFINTERFACES ............ : 15
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.125
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : MT2.SJU2
+   IP ............................ : 206.112.240.4
+   LOCATION ...................... : SJU2
+   TID ........................... : MT2.SJU2
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-JUN-2019 00:02
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-LAMX-1  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 206.112.240.4                                                 (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : 7204
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 15
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.125
+   DiscoveredFirstAt ............. : October 16, 2019 11:26:10 AM CDT
+   DiscoveredLastAt .............. : February 24, 2020 12:30:37 PM CST
+   DiscoveryTime ................. : 0 00:00:52
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Management Device
+   VZ_LocationCode ............... : SJU
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : AMERICA-LAMX
+   VZ_TID ........................ : MT2.SJU2
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-LAMX-1                                      (primary)
+                                   : RES-SAM8-AGG-VZB
+                                   : AMPM-VZB-RES-LAMX-1
+
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_MT2.SJU2_Unresponsive
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = CIMC-SR1.RES 
+=================================================
+EXECUTING: sml -d  CIMC-SR1.RES -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML FILE ...................... : /data/VI/DQ/CIMC-SR1.RES.xml                           (not found)
+   Device ........................ : CIMC-SR1.RES
+   Configured to be in ........... : AMPM-VZB-VAL-VRR-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USMA-2                                    (incorrect)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 146.170.6.132
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 18-MAR-20
+   DISCOVEREDLASTAT .............. : 18-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_UNMANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : UCS C240
+   NUMBEROFINTERFACES ............ : 0
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.1683
+   DISCOVERYERRORINFO ............ : Qualified access address not found
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 0                                                             (ok)
+   ELL Record .................... : NOT FOUND                                                (warning)
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : CIMC-SR1.RES
+   IP ............................ : 146.170.6.132
+   CLLI .......................... : ''
+   STATUS ........................ : NOT AVAILABLE
+   TREATMENT ..................... : ''
+   NOTES ......................... : removed on Thu Nov  7 14:30:57 2019 by Marshall, Tamie. 
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USMA-2  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 146.170.6.132                                        (not_managed)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : UCS C240
+   Location ...................... : RES
+   IsManaged ..................... : FALSE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 0
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.1683
+   DiscoveredFirstAt ............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveredLastAt .............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveryTime ................. : 0 00:00:16
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : ''
+   DiscoveryError ................ : Qualified access address not found                         (error)
+
+   Last mum records (max 10) ..... : 26-MAR-20 13:28  id: 24772873  code: 106  size:        1,182 bytes
+                                   : 26-MAR-20 15:28  id: 24774462  code: 106  size:        1,182 bytes
+                                   : 26-MAR-20 17:28  id: 24774912  code: 106  size:        1,182 bytes
+                                   : 26-MAR-20 21:28  id: 24777764  code: 106  size:        1,181 bytes
+                                   : 26-MAR-20 23:28  id: 24779434  code: 106  size:        1,182 bytes
+                                   : 27-MAR-20 01:28  id: 24780133  code: 106  size:        1,181 bytes
+                                   : 27-MAR-20 03:28  id: 24781248  code: 106  size:        1,181 bytes
+                                   : 27-MAR-20 05:28  id: 24782521  code: 106  size:        1,181 bytes
+                                   : 27-MAR-20 07:28  id: 24784009  code: 106  size:        1,182 bytes
+                                   : 27-MAR-20 09:29  id: 24785704  code: 106  size:        1,180 bytes
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USMA-2                                      (primary)
+
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = VP1.BUF4 
+=================================================
+EXECUTING: sml -d  VP1.BUF4 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Sun Mar 19 15:42:25 2017
+   LocationCode .................. : BUF4
+   Name .......................... : VP1.BUF4
+   Status ........................ : AVAILABLE
+   Type .......................... : VIRTUAL ROUTER
+   Vendor ........................ : Cisco
+   Model ......................... : 1000vCSR
+   ManagementIPAddr .............. : 152.63.14.22
+   DomainFlag .................... : VZB
+   Region ........................ : North East USA
+   Device ........................ : VP1.BUF4
+   Configured to be in ........... : AMPM-VZB-VAL-USNE-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USNE-1                                      (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 152.63.14.22
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 16-OCT-19
+   DISCOVEREDLASTAT .............. : 05-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : CSR1000v
+   NUMBEROFINTERFACES ............ : 5
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.1537
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : VP1.BUF4
+   IP ............................ : 152.63.14.22
+   LOCATION ...................... : BUF4
+   TID ........................... : VP1.BUF4
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 24-AUG-2017 13:45
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USNE-1  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 152.63.14.22                                                  (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : CSR1000v
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 5
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.1537
+   DiscoveredFirstAt ............. : October 16, 2019 11:51:16 AM CDT
+   DiscoveredLastAt .............. : March 5, 2020 9:33:05 PM CST
+   DiscoveryTime ................. : 0 00:00:41
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : BUF
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : AMERICA-USNE
+   VZ_TID ........................ : VP1.BUF4
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USNE-1                                      (primary)
+                                   : RES-SAM8-AGG-VZB
+                                   : AMPM-VZB-RES-USNE-1
+
+   Hosts services ................ : MPLSService::MPLS-VP1.BUF4
+                                   : VRF::VRF-ge-3/0/9.GW1.BUF4/VP1.BUF4
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_VP1.BUF4_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_VP1.BUF4_Down
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = BH1.LAX11 
+=================================================
+EXECUTING: sml -d  BH1.LAX11 -v
+=================================================
+
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML Timestamp ................. : Mon Dec 10 10:31:31 2018
+   LocationCode .................. : LAX11
+   Name .......................... : BH1.LAX11
+   Status ........................ : AVAILABLE
+   Type .......................... : VIRTUAL ROUTER
+   Vendor ........................ : Juniper
+   Model ......................... : vRR
+   ManagementIPAddr .............. : 137.39.4.75
+   DomainFlag .................... : VZB
+   Region ........................ : South West USA
+   Device ........................ : BH1.LAX11
+   Configured to be in ........... : AMPM-VZB-VAL-USSW-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USSW-1                                      (correct)
+   TYPE .......................... : ROUTER
+   SNMPADDRESS ................... : 137.39.4.75
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 04-MAR-20
+   DISCOVEREDLASTAT .............. : 04-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_MANAGED
+   VENDOR ........................ : JUNIPER
+   MODEL ......................... : VRR Internet Router
+   NUMBEROFINTERFACES ............ : 12
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.2636.1.1.1.2.110
+   DISCOVERYERRORINFO ............ : No response from Ping
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : BH1.LAX11
+   IP ............................ : 137.39.4.75
+   LOCATION ...................... : LAX11
+   TID ........................... : BH1.LAX11
+   STATUS ........................ : AVAILABLE
+   MODTIME ....................... : 10-DEC-2018 10:04
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 0                                                             (ok)
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USSW-1  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 137.39.4.75                                                   (ok)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : ROUTER
+   CreationClassName ............. : Router
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : JUNIPER
+   Model ......................... : VRR Internet Router
+   Location ...................... : ''
+   IsManaged ..................... : TRUE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 12
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.2636.1.1.1.2.110
+   DiscoveredFirstAt ............. : March 4, 2020 3:19:46 AM CST
+   DiscoveredLastAt .............. : March 4, 2020 3:19:46 AM CST
+   DiscoveryTime ................. : 0 00:00:41
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : Backbone Router
+   VZ_LocationCode ............... : LAX
+   VZ_Performance ................ : 1
+   VZ_Region ..................... : AMERICA-USSW
+   VZ_TID ........................ : BH1.LAX11
+   DiscoveryError ................ : No response from Ping                                      (error)
+
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USSW-1                                      (primary)
+
+   Hosts services ................ : BGPService::BGP-SVC-BH1.LAX11
+                                   : MPLSService::MPLS-BH1.LAX11
+                                   : ISISService::ISIS-SVC-BH1.LAX11
+
+   Active alarms ................. : ICS_Notification::NOTIFICATION-Router_BH1.LAX11_Unresponsive
+                                   : ICS_Notification::NOTIFICATION-Router_BH1.LAX11_Down
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@     END OF AUTOMATION     @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+

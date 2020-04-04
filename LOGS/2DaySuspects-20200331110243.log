@@ -1,0 +1,115 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  LISTING OF DEVICES THAT HAVE NO ALARMS @@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECTS      @@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  CIMC-SR1.RES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+ CURRENT SITE: VAL  ===================================================================================
+
+
+ INVENTORY XML DATA  ==================================================================================
+
+   XML FILE ...................... : /data/VI/DQ/CIMC-SR1.RES.xml                           (not found)
+   Device ........................ : CIMC-SR1.RES
+   Configured to be in ........... : AMPM-VZB-VAL-VRR-1
+
+ ORACLE :: VAL_TOPOLOGY_DEVICES  ======================================================================
+
+   AMPM domain ................... : AMPM-VZB-VAL-USMA-2                                    (incorrect)
+   TYPE .......................... : HOST
+   SNMPADDRESS ................... : 146.170.6.132
+   ACCESSMODE .................... : ICMPSNMP
+   CERTIFICATION ................. : CERTIFIED
+   DISCOVEREDFIRSTAT ............. : 18-MAR-20
+   DISCOVEREDLASTAT .............. : 18-MAR-20
+   MANAGEDSTATE .................. : EXPLICITLY_UNMANAGED
+   VENDOR ........................ : CISCO
+   MODEL ......................... : UCS C240
+   NUMBEROFINTERFACES ............ : 0
+   READCOMMUNITY ................. : Gr1usSr0
+   SYSTEMOBJECTID ................ : .1.3.6.1.4.1.9.1.1683
+   DISCOVERYERRORINFO ............ : Qualified access address not found
+
+ ORACLE :: PROXY CONNECTIONS  =========================================================================
+
+   Proxy connections ............. : NONE FOUND
+
+ ORACLE :: EQUIPMENT-LIST-LAST  =======================================================================
+
+   Number of records ............. : 0                                                             (ok)
+   ELL Record .................... : NOT FOUND                                                (warning)
+
+ ORACLE :: EXCEPTIONS  ================================================================================
+
+   Number of records ............. : 1                                                             (ok)
+   NAME .......................... : CIMC-SR1.RES
+   IP ............................ : 146.170.6.132
+   CLLI .......................... : ''
+   STATUS ........................ : NOT AVAILABLE
+   TREATMENT ..................... : ''
+   NOTES ......................... : removed on Thu Nov  7 14:30:57 2019 by Marshall, Tamie. 
+
+ SMARTS DOMAIN :: AMPM-VZB-VAL-USMA-2  ================================================================
+
+   Server name ................... : arlmnrvzb (162.47.144.11)
+   IP Address .................... : 146.170.6.132                                        (not_managed)
+   Certification ................. : CERTIFIED                                                     (ok)
+   Type .......................... : HOST
+   CreationClassName ............. : Host
+   AccessMode .................... : ICMPSNMP
+   ReadCommunity ................. : Gr1usSr0
+   Vendor ........................ : CISCO
+   Model ......................... : UCS C240
+   Location ...................... : RES
+   IsManaged ..................... : FALSE
+   IsProxy ....................... : FALSE
+   IsDiscoveryInProgress ......... : FALSE
+   IsEveryIPUnresponsive ......... : TRUE
+   IsEveryIPv6Unresponsive ....... : TRUE
+   IsEveryServiceUnresponsive .... : TRUE
+   NumberOfInterfaces ............ : 0
+   NumberOfPorts ................. : 0
+   SystemObjectID ................ : .1.3.6.1.4.1.9.1.1683
+   DiscoveredFirstAt ............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveredLastAt .............. : March 18, 2020 3:52:44 PM CDT
+   DiscoveryTime ................. : 0 00:00:16
+   VZ_Alarms ..................... : 1
+   VZ_DeviceFunction ............. : ''
+   VZ_LocationCode ............... : ''
+   VZ_Performance ................ : 0
+   VZ_Region ..................... : ''
+   VZ_TID ........................ : ''
+   DiscoveryError ................ : Qualified access address not found                         (error)
+
+   Last mum records (max 10) ..... : 30-MAR-20 09:30  id: 24842718  code: 106  size:        1,180 bytes
+                                   : 30-MAR-20 13:11  id: 24847105  code: 106  size:        1,179 bytes
+                                   : 30-MAR-20 13:31  id: 24847255  code: 106  size:        1,181 bytes
+                                   : 30-MAR-20 17:31  id: 24850565  code: 106  size:        1,181 bytes
+                                   : 30-MAR-20 21:31  id: 24852943  code: 106  size:        1,179 bytes
+                                   : 31-MAR-20 01:31  id: 24856119  code: 106  size:        1,180 bytes
+                                   : 31-MAR-20 03:31  id: 24857234  code: 106  size:        1,181 bytes
+                                   : 31-MAR-20 05:31  id: 24858777  code: 106  size:        1,182 bytes
+                                   : 31-MAR-20 07:31  id: 24860386  code: 106  size:        1,180 bytes
+                                   : 31-MAR-20 09:31  id: 24861654  code: 106  size:        1,181 bytes
+
+ SMARTS VAL-SAM8-PRES DATA  ===========================================================================
+
+   Exists in domains ............. : VAL-SAM8-AGG-VZB
+                                   : AMPM-VZB-VAL-USMA-2                                      (primary)
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@  NO Active alarms FOUND - SUSPECT    @@@@@@@
+@@@  Active Alarms NOT found for  CIMC-SR1.RES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@     END OF AUTOMATION     @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

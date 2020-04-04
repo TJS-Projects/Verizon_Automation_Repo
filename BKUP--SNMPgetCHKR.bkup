@@ -15,8 +15,7 @@
 CURDATE=`date +%Y%m%d%H%M%S`
 SCRIPT_PATH=~/TjsMYSCRIPTS
 TEMP_PATH=/tmp
-MyLogFileName=TwoDayListingScript-"""$CURDATE""".log
-# MyLogFileName=SNMPgetScript-"""$CURDATE""".log
+MyLogFileName=SNMPgetScript-"""$CURDATE""".log
 TemporaryLog=TempScript-"""$CURDATE""".log
 
 # MYINTERVAL=2
@@ -32,8 +31,8 @@ My_Known_Comm_Strgs=$SCRIPT_PATH/INPUTS/TestCommStrgs
 . $SCRIPT_PATH/MODULES/SmartsFunctions
 # PATH=$PATH:/usr/sbin
 MYCOUNT=0
-MYINT_3=3
-MYINT_7=7
+# MYINT_1=300
+# MYINT_2=5
 # MYCOUNT=0
 #      Set your Function name here:
 
@@ -55,7 +54,8 @@ Input_File_1=$My_ARL_2DayList
 #  Put this inside the Function -- Log_Out_Put
 
 #      Function call:
-TwoDayLoop_2
+TwoDayLoop_1
+
 
 exit
 

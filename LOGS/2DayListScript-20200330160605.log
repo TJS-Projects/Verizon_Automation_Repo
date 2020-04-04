@@ -1,0 +1,142 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@  STEP 10 This is automation for the last discovered GT 2 Day List!  @@@
+The Current Bash version 4.1.2(1)-release...
+                 Mon Mar 30 16:06:05 CDT 2020 
+                 Running Function #:  TwoDayListing       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+SCRIPT_PATH     =  /home/smarts/TjsMYSCRIPTS
+MYLOG           =  /home/smarts/TjsMYSCRIPTS/LOGS/2DayListScript-20200330160605.log
+MYtmpLOG        =  /tmp/TempScript-20200330160605.log
+MYtmpINPUT_1    =  /tmp/last_discovery_gt_2days_rpt_20200330*
+MYTmpOUTPUT_1   =  /tmp/Dev_out1_Chkr_2day-20200330160605.log
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+@@@ THE FOLLOWING DEVICES WERE FOUND IN THE  @@@@
+@@@          CURRENT 2 DAY LISTING:          @@@@
+=================================================
+MC1.LND18
+MC1.LND6
+MC13.LND6
+MC13.LND9
+MC16.LND6
+MC3.LND6
+MC9.LND6
+MC11.FFT3
+ME4.FFT3
+VR1.TOR2
+CIMC-SR1.RES
+VP1.BUF4
+BH1.LAX11
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC1.LND18 
+=================================================
+EXECUTING: sml -d  MC1.LND18 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC1.LND6 
+=================================================
+EXECUTING: sml -d  MC1.LND6 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC13.LND6 
+=================================================
+EXECUTING: sml -d  MC13.LND6 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC13.LND9 
+=================================================
+EXECUTING: sml -d  MC13.LND9 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC16.LND6 
+=================================================
+EXECUTING: sml -d  MC16.LND6 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC3.LND6 
+=================================================
+EXECUTING: sml -d  MC3.LND6 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC9.LND6 
+=================================================
+EXECUTING: sml -d  MC9.LND6 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = MC11.FFT3 
+=================================================
+EXECUTING: sml -d  MC11.FFT3 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = ME4.FFT3 
+=================================================
+EXECUTING: sml -d  ME4.FFT3 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = VR1.TOR2 
+=================================================
+EXECUTING: sml -d  VR1.TOR2 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = CIMC-SR1.RES 
+=================================================
+EXECUTING: sml -d  CIMC-SR1.RES -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = VP1.BUF4 
+=================================================
+EXECUTING: sml -d  VP1.BUF4 -v
+=================================================
+
+
+=================================================
+=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === 
+CURRENT DEVICE BEING INTEROGATED = BH1.LAX11 
+=================================================
+EXECUTING: sml -d  BH1.LAX11 -v
+=================================================
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@     END OF AUTOMATION     @@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+

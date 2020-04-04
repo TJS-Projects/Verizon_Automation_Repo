@@ -12,6 +12,7 @@
 
 #Setting Variables:
 # ===================================================
+# ===================================================
 CURDATE=`date +%Y%m%d%H%M%S`
 SCRIPT_PATH=~/TjsMYSCRIPTS
 TEMP_PATH=/tmp
@@ -42,16 +43,19 @@ RunningFunc=TwoDayListing
 . /opt/sbin/
 alias sml='smarts_lookup.pl'
 
-#      Set your input file name here:
-My_ARL_2DayList=$SCRIPT_PATH/INPUTS/My_ARL_2DayList
-Input_File_1=$My_ARL_2DayList
-
-#      Header for the output this will include the function name from above:
-#  Put this inside the Function -- Log_Out_Put
-
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@  TESTING FUNCTIONS   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#      Set your Function name here:
+RunningFunc=TwoDayListing
 #      Function call:
-TwoDayLoop_1
-RES_LD_GT_2Day_FULL-Mail
-RES_LD_GT_2Day_Suspects-Mail
+
+echo $HOSTNAME
+
+if $HOSTNAME === "ARLmnrdb" Then
+echo "Checked - Myhostname = arlmnrdb"
+else if $HOSTNAME === "resnmnrdb" Then
+echo "Checked - Myhostname = RESmnrdb"
+fi
 
 exit

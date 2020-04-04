@@ -1,0 +1,115 @@
+#!/bin/bash
+#
+# This script was created to read in a list of devices from the INPUT directory and process commands that have been set.
+# Created 03/11/2020 Tjs.
+#
+
+# Standard error behavior settings:
+# ----------------------------------------------------
+# set -e
+#  set -u
+#   set -o pipefail
+
+#Setting Variables:
+# ===================================================
+CURDATE=$(date +%Y%m%d%H%M%S)
+SCRIPT_PATH=~/TjsMYSCRIPTS
+TEMP_PATH=/tmp
+MYtmpINPUT_1="${TEMP_PATH}"/last_discovery_gt_2days_rpt_$(date +%Y%m%d)*
+MYTmpINPUT_2=$TEMP_PATH/Last_Disco_2day-"""$CURDATE""".log
+MYTmpOUTPUT_1=$TEMP_PATH/Dev_Chkr_2day-"""$CURDATE""".log
+MYLOG=$SCRIPT_PATH/2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_1=$SCRIPT_PATH/2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_2=$SCRIPT_PATH/2Day_SUSPECT_Listing-"""$CURDATE""".log
+
+MYtmpINPUT_1=$TEMP_PATH/last_discovery_gt_2days_rpt_$(date +%Y%m%d)*
+MYTmpINPUT_2=$TEMP_PATH/Last_Disco_2day-"""$CURDATE""".log
+MYTmpOUTPUT_1=$TEMP_PATH/Dev_Chkr_2day-"""$CURDATE""".log
+MYTmpOUTPUT_2=$TEMP_PATH/Results_Dev_Chkr_2day-"""$CURDATE""".log
+MYLOG=$SCRIPT_PATH/LOGS/Main_2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_1=$SCRIPT_PATH/LOGS/MLFN_2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_2=$SCRIPT_PATH/LOGS/SUSPECT_2Day_Listing-"""$CURDATE""".log
+
+
+# attaching to the MODULES / SmartsFunctions.
+#   . $SCRIPT_PATH/MODULES/SmartsFunctions
+MYCOUNT=0
+
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@  TWO DAY LISTING  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#      Set your Function name here:
+RunningFunc=TwoDayListing
+#      Function call:
+TwoDayLoop_1
+
+
+function TwoDayLoop_1() {
+# Setting up Logging for this function:
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+# attaching perl and adding alias
+#!/opt/sbin/perl
+. /opt/sbin/
+alias sml='smarts_lookup.pl'
+
+# Grooming 2Day line report for input to the loop.
+grep AMPM "$MYtmpINPUT_1" | cut -d , -f1 > "$MYTmpINPUT_2"
+
+# Head Banner for ths 2DayList.
+Log_Out_Put_1
+
+# Loop checking each device.
+for Dev_Input_1 in $(awk -F: '{print $1}' "$MYTmpINPUT_2")
+do
+LastDisco2DayBanner
+sm_perl /opt/sbin/smarts_lookup.pl -d "${Dev_Input_1}" "-v" | tee -a "${MYtmpOUTPUT_1}"
+TwoDayChkr
+
+#      NOTE: need to remove MYtmpOUTPUT_1!
+rm "$MYtmpOUTPUT_1"
+done
+# Cleaning up temporary files.
+rm "$MYTmpINPUT_2"
+#      NOTE: This should have been removed from within the Loop but does not hurt to have it here as well.
+rm "$MYtmpOUTPUT_1"
+rm "$MYtmpOUTPUT_2"
+MyBanner_Input_1="END OF AUTOMATION"
+MYLOG_1="${MYLOG}"
+AutoMate_Banner
+}
+
+
+function AutoMate_Banner() {
+echo '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@' | tee -a "${MYLOG_1}"
+echo '@@@@@@@@@@@     ' "${MyBanner_Input_1}" | tee -a "${MYLOG_1}"
+echo '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@' | tee -a "${MYLOG_1}"
+echo "" | tee -a "${MYLOG_1}"
+echo "" | tee -a "${MYLOG_1}"
+}
+
+
+
+function TwoDayChkr() {
+# testing for Active alarms and splitting output based on results.
+MyTmpOUTPUT_2=$TEMP_PATH/Results_Dev_Chkr_2day-"""$CURDATE""".log
+if grep -E "Active alarms " "$MYtmpOUTPUT_1" > "${MYTmpINPUT_2}" 2>&1
+then
+MyBanner_Input_1="FOUND Active alarms "
+MYLOG_1="${MyLogFileName_1}"
+AutoMate_Banner
+echo "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_1}"
+echo "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_2}"
+else
+MyBanner_Input_1="NO Active alarms FOUND - SUSPECT "
+MYLOG_1="${MyLogFileName_1}"
+AutoMate_Banner
+echo "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_2}"
+fi
+sleep "$MYINT_3"
+echo "${MYtmpLOG}" | tee -a "${MYLOG}"
+rm "${MYtmpLOG}"
+
+}

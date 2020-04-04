@@ -1,0 +1,335 @@
+#!/bin/bash
+#
+# This File contains all of the Function Modules for the automation of SMARTS functions.
+# Created 2/29/2020 Tjs.
+#
+# Setting up Logging for this function:
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+function Log_Out_Put_1() {
+#
+# Step 10 - This is just a simple banner to show what step we are in.
+#
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+echo "@@@  STEP 10 This is automation for the last discovered GT 2 Day List!  @@@" >> ${MYLOG} 2>&1
+echo "The Current Bash version ${BASH_VERSION}..." | tee -a ${MYLOG}
+echo "                 `date` " >> ${MYLOG} 2>&1
+echo "                 Running Function #:  """$RunningFunc"""       " >> ${MYLOG} 2>&1
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+echo "SCRIPT_PATH   = " $SCRIPT_PATH | tee -a ${MYLOG}
+echo "MYtmpINPUT_1  = " $MYtmpINPUT_1 | tee -a ${MYLOG}
+echo "MYTmpINPUT_2  = " $MYTmpINPUT_2 | tee -a ${MYLOG}
+echo "MYTmpOUTPUT_1 = " $MYTmpOUTPUT_1| tee -a ${MYLOG}
+echo "MYTmpOUTPUT_2 = " $MYTmpOUTPUT_2| tee -a ${MYLOG}
+echo "MyLogFileName_1 = " $MyLogFileName_1 | tee -a ${MYLOG}
+echo "MyLogFileName_2 = " $MyLogFileName_2 | tee -a ${MYLOG}
+echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" >> ${MYLOG} 2>&1
+}
+
+
+function Log_Out_Put_2() {
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+ echo "                       `date` " | tee -a ${MYLOG}
+ echo "Bash version ${BASH_VERSION}..." | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "STAGE 1: STEP 10 This is just a simple banner to place in the log File!" | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "                 Running Function #:  """$RunningFunc"""       " | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "SCRIPT_PATH = " $SCRIPT_PATH | tee -a ${MYLOG}
+ echo "MYLOG   =     " $MYLOG | tee -a ${MYLOG}
+ echo "MYtmpLOG    = " $MYtmpLOG | tee -a ${MYLOG}
+ echo "My_ARL_DOMS = " $My_ARL_DOMS | tee -a ${MYLOG}
+ echo "My_RES_DOMS = " $My_RES_DOMS | tee -a ${MYLOG}
+ echo "My_Known_Comm_Strgs = " $My_Known_Comm_Strgs | tee -a ${MYLOG}
+ echo "" | tee -a ${MYLOG}
+ echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" | tee -a ${MYLOG}
+
+#
+# Stage 1:  Step 10 - This step ....
+#
+}
+
+
+function MyIpVerification(){
+echo '===============================================' | tee -a "${MYLOG}"
+echo 'You have entered an IP address parameter' | tee -a "${MYLOG}"
+echo 'The current CIPAdd = '$CIPAdd | tee -a "${MYLOG}"
+echo '===============================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function CommunityBanner() {
+echo '=================================================' | tee -a "${MYLOG}"
+echo '=== BEGINNING TEST OF KNOWN COMMUNITY STRINGS === ' | tee -a "${MYLOG}"
+echo "Community String = $Input_1" | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function OIDCallBanner() {
+echo '=================================================' | tee -a "${MYLOG}"
+echo '=== BEGINNING TEST OF SYSNAME OID            === ' | tee -a "${MYLOG}"
+echo "Object ID = $MyOID_Call" | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function LastDisco2DayBanner() {
+echo '=================================================' | tee -a "${MYLOG}"
+echo '=== BEGINNING OUTPUT FOR THE 2 DAY LIST      === ' | tee -a "${MYLOG}"
+echo "CURRENT DEVICE BEING INTEROGATED = "$Input_1" " | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "EXECUTING: sml -d " "${Input_1}" "-v" | tee -a "${MYLOG}"
+echo '=================================================' | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+echo "" | tee -a "${MYLOG}"
+}
+
+function AutoMate_Banner() {
+echo '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@' | tee -a "${MYLOG_1}"
+echo '@@@@@@@@@@@     ' "${MyBanner_Input_1}" | tee -a "${MYLOG_1}"
+echo '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@' | tee -a "${MYLOG_1}"
+echo "" | tee -a "${MYLOG_1}"
+echo "" | tee -a "${MYLOG_1}"
+}
+
+
+function TwoDayLoop_1() {
+# Setting up Logging for this function:
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+MYtmpINPUT_1=$TEMP_PATH/last_discovery_gt_2days_rpt_`date +%Y%m%d`*
+MYTmpINPUT_2=$TEMP_PATH/Last_Disco_2day-"""$CURDATE""".log
+MYTmpOUTPUT_1=$TEMP_PATH/Dev_Chkr_2day-"""$CURDATE""".log
+MYTmpOUTPUT_2=$TEMP_PATH/Results_Dev_Chkr_2day-"""$CURDATE""".log
+MYLOG=$SCRIPT_PATH/2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_1=$SCRIPT_PATH/2Day_FULL_Listing-"""$CURDATE""".log
+MyLogFileName_2=$SCRIPT_PATH/2Day_SUSPECT_Listing-"""$CURDATE""".log
+
+# attaching perl and adding alias
+#!/opt/sbin/perl
+. /opt/sbin/
+alias sml='smarts_lookup.pl'
+
+# Grooming 2Day line report for input to the loop.
+grep AMPM $MYtmpINPUT_1 | cut -d , -f1 > "$MYTmpINPUT_2"
+
+# Head Banner for ths 2DayList.
+Log_Out_Put_1
+
+# Loop checking each device.
+for Dev_Input_1 in `awk -F: '{print $1}' "$MYTmpINPUT_2"`
+do
+LastDisco2DayBanner
+sm_perl /opt/sbin/smarts_lookup.pl -d "${Dev_Input_1}" "-v" | tee -a "${MYtmpOUTPUT_1}"
+2DayChkr
+
+#      NOTE: need to remove MYtmpOUTPUT_1!
+rm $MYtmpOUTPUT_1
+done
+# Cleaning up temporary files.
+rm $MYTmpINPUT_2
+#      NOTE: This should have been removed from within the Loop but does not hurt to have it here as well.
+rm $MYtmpOUTPUT_1
+rm $MYtmpOUTPUT_2
+MyBanner_Input_1="END OF AUTOMATION"
+MYLOG_1="${MYLOG}"
+AutoMate_Banner
+}
+
+function 2DayChkr() {
+# testing for Active alarms and splitting output based on results.
+MyTmpOUTPUT_2=$TEMP_PATH/Results_Dev_Chkr_2day-"""$CURDATE""".log
+if egrep "Active alarms " $MYtmpOUTPUT_1 > "${MYTmpINPUT_2}" 2>&1
+then
+MyBanner_Input_1="FOUND Active alarms "
+MYLOG_1="${MyLogFileName_1}"
+AutoMate_Banner
+cat "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_1}" 
+cat "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_2}" 
+else
+MyBanner_Input_1="NO Active alarms FOUND - SUSPECT "
+MYLOG_1="${MyLogFileName_1}"
+AutoMate_Banner
+cat "${MYtmpOUTPUT_1}" | tee -a "${MyLogFileName_2}"
+fi
+sleep $MYINT_3
+cat ${MYtmpLOG} | tee -a "${MYLOG}"
+rm "${MYtmpLOG}"
+
+}
+
+function MySymLinker() {
+#  BELOW IS THE CODE THAT WAS USED TO POPULATE THIS DIRECTORY WITH THE LINKS:
+#  =========================================================================================================
+echo $DomainName
+ln -s /data/InCharge95/"""$DomainName"""/local/logs/"""$DomainName"""_en_US_UTF-8.log """$DomainName"""_en_US_UTF-8.log
+lsa /data/InCharge95/"""$DomainName"""/local/logs/"""$DomainName"""_en_US_UTF-8.log
+}
+
+
+function LOGICSNMPgetLoop_2() {
+# Logging for this function:
+MyLogFileName=SNMPgetChkr_v2-"""$CURDATE""".log
+TemporaryLog=TempScript-"""$CURDATE""".log
+MYtmpLOG=$TEMP_PATH/"""$TemporaryLog"""
+MYLOG=$SCRIPT_PATH/LOGS/"""$MyLogFileName"""
+
+# Head Banner for ths 2DayList.
+Log_Out_Put_1
+# Loop checking each Known Community String against a device.
+
+for Input_1 in `awk -F: '{print $1}' "$Input_File_1"`
+do
+
+ CommunityBanner
+ MyIpVerification
+ OIDCallBanner
+
+# echo "1--snmpget -v 2c -c" "$Input_1" | tee -a "${MYLOG}"
+# echo "2--snmpget -v 2c -c" "${Input_1}" "${CIPAdd}" | tee -a "${MYLOG}"
+# echo "3--snmpget -v 2c -c" "$Input_1" ${CIPAdd} ${MyOID_Call} | tee -a "${MYLOG}"
+
+snmpget -v 2c -c "${Input_1}" ${CIPAdd} ${MyOID_Call}  >> "${MYtmpLOG}" 2>&1
+cat "${MYtmpLOG}" | tee -a "$MYLOG"
+If 
+
+
+rm "${MYtmpLOG}"
+done
+MyBanner_Input_1="END OF AUTOMATION"
+MYLOG_1="${MYLOG}"
+AutoMate_Banner
+}
+
+
+
+function SNMPgetLoop_2() {
+# Logging for this function:
+MyLogFileName=SNMPgetChkr-"""$CURDATE""".log
+TemporaryLog=TempScript-"""$CURDATE""".log
+MYtmpLOG=$TEMP_PATH/"""$TemporaryLog"""
+MYLOG=$SCRIPT_PATH/LOGS/"""$MyLogFileName"""
+
+# Head Banner for ths 2DayList.
+Log_Out_Put_1
+# Loop checking each Known Community String against a device.
+
+for Input_1 in `awk -F: '{print $1}' "$Input_File_1"`
+do
+
+ CommunityBanner
+ MyIpVerification
+ OIDCallBanner
+
+echo "OUTPUT OF TEST--snmpget -v 2c -c" "$Input_1" ${CIPAdd} ${MyOID_Call} >> "${MYtmpLOG}"
+snmpget -v 2c -c "${Input_1}" ${CIPAdd} ${MyOID_Call}  >> "${MYtmpLOG}" 2>&1
+cat "${MYtmpLOG}" | tee -a "$MYLOG"
+rm "${MYtmpLOG}"
+done
+MyBanner_Input_1="END OF AUTOMATION"
+MYLOG_1="${MYLOG}"
+AutoMate_Banner
+
+}
+
+
+function MySnmpGetChkr() {
+#
+# This is the function to test Known Commnity strings against a device.
+#
+echo "" | tee -a ${MYLOG}
+date >> ${MYLOG}
+echo "TESTING snmpget -v 2c -c """$CSNMPkey""" " | tee -a ${MYLOG}
+echo '=================================================' | tee -a ${MYLOG}
+snmpget -v 2c -c """$CSNMPkey""" """$CIPAdd""" sysName.0 >> ${MYLOG} 2>&1
+}
+
+
+function My_While_Options() {
+while getopts 'lha:' OPTION; do
+  case "$OPTION" in
+    l)
+      echo "linuxconfig"
+      ;;
+
+    h)
+      echo "h stands for h"
+      ;;
+
+    a)
+      avalue="$OPTARG"
+      echo "The value provided is $OPTARG"
+      ;;
+    ?)
+      echo "script usage: $(basename $0) [-l] [-h] [-a somevalue]" >&2
+      exit 1
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
+}
+
+
+function TESTING_2DayChkr() {
+# Logging for this function.
+### NOTE:::  This is for testing ONLY This should be removed.
+MyLogFileName=TESTScript-"""$CURDATE""".log
+MyTmpOUTPUT=Last_Disco_2day-"""$CURDATE""".log
+MYLOG=$SCRIPT_PATH/LOGS/"""$MyLogFileName"""
+MY_LOG_INPUT_1=$SCRIPT_PATH/LOGS/2DayListing-20200324133216.log2
+TemporaryLog=TempScript-"""$CURDATE""".log
+MYtmpLOG=$TEMP_PATH/"""$TemporaryLog"""
+MYINT_1=1
+MYINT_3=3
+MYINT_5=5
+# Tsting code:
+# This is to see if I will find Active Alarms:
+# Didn't work-- if grep -Fxq $MY_LOG_INPUT_1 "Active alarms "
+if egrep "Active alarms " $MY_LOG_INPUT_1 > "${MYtmpLOG}" 2>&1
+then
+echo "FOUND YOU!!!" | tee -a "${MYLOG}"
+else
+echo "MISSED YOU!!!" | tee -a "${MYLOG}"
+fi
+sleep $MYINT_3
+cat ${MYtmpLOG} | tee -a "${MYLOG}"
+rm "${MYtmpLOG}"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
